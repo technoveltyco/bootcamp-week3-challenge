@@ -20,21 +20,27 @@
 <body>
   
   <!-- main logo / nav -->
-  <header>
-    <h1 class="highlight">Technoveltyco</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#work">My Works</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
+  <header class="navbar">
+    <!--nav brand-->
+    <a href="/" class="navbar-brand highlight"><h1>Technoveltyco</h1></a>
+
+    <!-- hamburger menu-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- main navigation -->
+    <nav class="nav navbar-nav" id="navbarNav">
+      <a class="nav-link" href="#about">About Me</a>
+      <a class="nav-link" href="#work">My Works</a>
+      <a class="nav-link" href="#contact">Contact Me</a>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2 class="highlight">Upskilling to become a better Full Stack Web Developer</h2>
+      <h2 class="highlight">Experienced Back-End upskilling to become a Full Stack Developer</h2>
     </div>
   </section>
 
