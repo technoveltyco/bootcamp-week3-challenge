@@ -1,15 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-gb">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Bootcamp Week 3 Challenge</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="An example of a portfolio using Bootstrap.">
+  <meta name="keywords" content="HTML, CSS, Bootstrap">
+  <meta name="author" content="Technoveltyco">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Technoveltyco // Web Developer</title>
+  <!-- Boostrap CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Custom reset CSS -->
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <!-- Custom portfolio CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body>
-    <main>
-        <p>Hellow World!</p>
-    </main>
+  <!-- main logo / nav -->
+  <header>
+    <h1 class="highlight">Technoveltyco</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#work">My Works</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- hero banner -->
+  <section class="hero-banner">
+    <div>
+      <h2 class="highlight">Upskilling to become a better Full Stack Web Developer</h2>
+    </div>
+  </section>
+
+  <main class="page-wrapper">
+
+    <!-- about me -->
+    <section class="page-section" id="about">
+      <div class="heading">
+        <h2>About Me</h2>
+      </div>
+      <div class="separator"></div>
+      <div class="content brief">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil enim facere nobis vel sed id culpa inventore unde delectus, amet autem vitae excepturi accusamus perspiciatis consequatur, molestiae corrupti magnam quidem ex rerum? Distinctio, corrupti eius! Cum maiores animi fugiat repudiandae adipisci, nesciunt deleniti ex aspernatur quis commodi repellat cumque delectus?</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore saepe blanditiis quis accusamus, accusantium similique iste excepturi ratione delectus laboriosam veniam, illum ducimus autem facilis in repudiandae sequi repellendus doloribus soluta impedit consequuntur!</p>
+  
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea cumque voluptatem cum atque exercitationem dignissimos.</p>
+      </div>
+    </section>
+
+    <!-- portfolio container -->
+    <section class="page-section" id="work">
+      <h2>My Works</h2>
+
+      <div class="projects">
+        <article class="highlighted">
+          <!-- <img src="./assets/images/02-run-buddy.jpg" alt="most recent project preview"> -->
+          <div class="container">
+            <div class="summary">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat alias necessitatibus modi! Sapiente nisi optio expedita cum reprehenderit.</p>
+            </div>
+            <div class="info">
+              <h3>Run Buddy</h3>
+              <h4>MERN Stack</h4>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <!-- <img src="./assets/images/02-portfolio-1.jpg" alt="project 1 preview"> -->
+          <div class="container">
+            <div class="summary">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, praesentium!</p>
+            </div>
+            <div class="info">
+              <h3>LED Wall</h3>
+              <h4>Node.js</h4>
+              <h4>IoT</h4>
+            </div>
+          </div>
+        </article>
+  
+        <article>
+          <!-- <img src="./assets/images/02-portfolio-2.jpg" alt="project 2 preview"> -->
+          <div class="container">
+            <div class="summary">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, iure illo repudiandae unde adipisci et!</p>
+            </div>
+            <div class="info">
+              <h3>Calculator</h3>
+              <h4>React.js</h4>
+              <h4>JavaScript</h4>
+              <h4>CSS</h4>
+            </div>
+          </div>
+        </article>
+  
+        <article>
+          <!-- <img src="./assets/images/02-portfolio-3.jpg" alt="project 3 preview"> -->
+          <div class="container">
+            <div class="summary">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa expedita dolore repudiandae, consequatur vitae molestiae nobis placeat similique sunt?</p>
+            </div>
+            <div class="info">
+              <h3>Pastel Puzzels</h3>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
+              <h4>JavaScript</h4>
+            </div>
+          </div>
+        </article>
+  
+        <article>
+          <!-- <img src="./assets/images/02-portfolio-4.jpg" alt="project 4 preview"> -->
+          <div class="container">
+            <div class="summary">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum velit deserunt natus labore.</p>
+            </div>
+            <div class="info">
+              <h3>Surf Report</h3>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="page-section contact" id="contact">
+      <div>
+        <h2>Contact Me</h2>
+      </div>
+      <div class="container">
+        <address>
+          Written by <a href="mailto:danielr@example.com">Daniel Rodriguez</a>.<br>
+          Visit me at:<br>
+          Example.com<br>
+          Box 564, Disneyland<br>
+          USA
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ with HTML and CSS.</p>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
