@@ -20,8 +20,6 @@
   }
   
   body {
-    margin: 0;
-    padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
   }
@@ -53,22 +51,14 @@
     color: var(--dark-text);
   }
   
-  /* Header, nav menu. */
+  /* header, navbar, nav menu. */
   
-  header {
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5em;;
+  header.bg-dark {
+    background-color: var(--primary-color) !important;
   }
-  
-  header nav {
-    padding: 0 15px;
-  }
-  
+    
   header nav a {
-    color: var(--midlight-text);
+    color: var(--midlight-text) !important;
   }
   
   /* Hero banner. */
