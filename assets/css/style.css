@@ -1,4 +1,4 @@
-/* Variables and globals. */
+/* Variables. */
 
 :root {
     --primary-color: rgb(54, 53, 53);
@@ -12,8 +12,10 @@
     --pf-rows-small: 500px repeat(4, 350px);
     --font-size-large: 2.33em;
     --font-size-medium: 1.33em;
-    --font-size-small: 0.83em;
+    --font-size-small: 1em;
   }
+
+  /* Globals. */
   
   * {
     box-sizing: border-box;
@@ -36,19 +38,15 @@
   p {
     margin: 1em;
   }
-  
-  .summary p {
-    margin: 0;
+    
+  a {
+    color: var(--dark-text);
   }
   
   .text-highlight {
     background-color: var(--secondary-color);
     color: var(--light-text);
     padding: 10px;
-  }
-  
-  a {
-    color: var(--dark-text);
   }
   
   /* header, navbar, nav menu. */
@@ -61,35 +59,36 @@
     color: var(--midlight-text) !important;
   }
   
-  /* Hero banner. */
+  /* hero banner. */
   
   .hero-banner {
     background: center/100% no-repeat url("../images/02-hero-bg.jpg");
   }
   
-  /* Main content - about, work, contact. */
+  /* main - about, work, contact. */
   
   .page-wrapper {
     padding: 2.33em;
   }
   
   .page-section {
-    display: flex;
-    margin: 2em;
-  }
-  
-  .page-section h2 {
-    color: var(--dark-text);
-    font-size: var(--font-size-large);
-    border-right: 1rem solid var(--dark-text);
     padding: 1em;
   }
   
-  #about .brief {
-    margin: 0 1em;
-    padding: 1em 0;;
+  .page-section .heading,
+  .page-section .content {
+    padding: 1em;
   }
-  
+
+  .page-section .heading h2 {
+    color: var(--dark-text);
+    font-size: var(--font-size-large);
+  }
+
+  .page-section .content {
+    border-left: 1em solid var(--dark-text);
+  }
+    
   #work .projects {
     display: grid;
     grid-template-columns: var(--pf-columns-large);
@@ -156,7 +155,7 @@
     display: inline-block;
   }
   
-  /* Hover Effects. */
+  /* hover effects. */
   
   #work .projects .container .summary p {
     opacity: 0;
@@ -178,17 +177,17 @@
     margin: 0 1.33em;;
   }
   
-  /* Footer */
+  /* footer */
   
   footer {
     text-align: center;
     padding: 20px;
   }
   
-  /* Media Queries. */
+  /* responsive breakpoints. */
   
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) { 
     #work .projects {
       grid-template-columns: var(--pf-columns-small);
       grid-template-rows: var(--pf-rows-small);
@@ -200,16 +199,10 @@
       '.'
       ;
     }
-  
-    .page-section h2,
-    #work .projects .container .info h3,
-    #work .projects .container .summary p {
-      font-size: var(--font-size-small);
-    }
   }
   
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) { 
     #work .projects {
       grid-template-columns: var(--pf-columns-small);
       grid-template-rows: var(--pf-rows-small);
@@ -221,25 +214,29 @@
       '.'
       ;
     }
+  }
   
-    .page-section h2,
-    #work .projects .container .info h3 {
-      font-size: var(--font-size-medium);
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    #work .projects {
+      grid-template-columns: var(--pf-columns-small);
+      grid-template-rows: var(--pf-rows-small);
+      grid-template-areas: 
+      'main'
+      '.'
+      '.'
+      '.'
+      '.'
+      ;
     }
   }
   
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+
   }
   
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) { 
+
   }
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-  
-  }
-  
