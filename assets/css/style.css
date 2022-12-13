@@ -7,9 +7,9 @@
     --midlight-text: rgb(19, 170, 184);
     --dark-text: rgb(15, 62, 117);
     --pf-columns-large: repeat(2, 1fr);
-    --pf-rows-large: 500px repeat(2, 350px);
+    --pf-rows-large: repeat(3, auto);
     --pf-columns-small: 1fr;
-    --pf-rows-small: 500px repeat(4, 350px);
+    --pf-rows-small: repeat(4, auto);
     --font-size-large: 2.33em;
     --font-size-medium: 1.33em;
     --font-size-small: 1em;
@@ -34,11 +34,7 @@
   h6 {
     margin: 0;
   }
-  
-  p {
-    margin: 1em;
-  }
-    
+      
   a {
     color: var(--dark-text);
   }
@@ -88,8 +84,12 @@
   .page-section .content {
     border-left: 1em solid var(--dark-text);
   }
+
+  .page-section .content p {
+    padding: 1em;
+  }
     
-  #work .projects {
+  #work .portfolio {
     display: grid;
     grid-template-columns: var(--pf-columns-large);
     grid-template-rows: var(--pf-rows-large);
@@ -100,76 +100,80 @@
      ;
   }
   
-  #work .projects article {
-    margin: 20px;
-  }
-  
-  #work .projects article:first-child {
+  #work .portfolio .project.highlighted {
     grid-area: main;
-    background: center/100% no-repeat url("../images/02-run-buddy.jpg");
-    background-size: cover;
   }
   
-  #work .projects article:nth-child(2) {
-    background: center/100% no-repeat url("../images/02-portfolio-1.jpg");
-    background-size: cover;
-  }
-  
-  #work .projects article:nth-child(3) {
-    background: center/100% no-repeat url("../images/02-portfolio-2.jpg");
-    background-size: cover;
-  }
-  
-  #work .projects article:nth-child(4) {
-    background: center/100% no-repeat url("../images/02-portfolio-3.jpg");
-    background-size: cover;
-  }
-  
-  #work .projects article:nth-child(5) {
-    background: center/100% no-repeat url("../images/02-portfolio-4.jpg");
-  }
-  
-  #work .projects .container {
+  #work .portfolio .project {
     position: relative;
     max-width: 100%;
     height: 100%;
+    padding: 20px;
+  }
+
+  #work .portfolio .project figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
   
-  #work .projects .container .info {
+  #work .portfolio .project figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  #work .portfolio .project figure figcaption,
+  #work .portfolio .project .info {
     position: absolute;
-    bottom: 10%;
+  }
+
+  #work .portfolio .project figure figcaption {
+    top: 0;
+    z-index: 10;
+    height: 100%;
+  }
+
+  #work .portfolio .project .info {
+    bottom: 15%;
     background-color: var(--secondary-color);
     padding: 10px;
   }
+
+  #work .portfolio .project.project.highlighted .info {
+    bottom: 20%;
+  }
   
-  #work .projects .container .info h3,
-  #work .projects .container .info h4 {
+  #work .portfolio .project .info h3,
+  #work .portfolio .project .info h4 {
     color: var(--light-text);
   }
   
-  #work .projects .container .info h3 {
+  #work .portfolio .project .info h3 {
     font-size: var(--font-size-large);
   }
   
-  #work .projects .container .info h4 {
+  #work .portfolio .project .info h4 {
+    font-size: var(--font-size-medium);
     display: inline-block;
   }
   
   /* hover effects. */
   
-  #work .projects .container .summary p {
+  #work .portfolio .project figure figcaption {
     opacity: 0;
     color: var(--light-text);
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-small);
     padding: 1em;
   }
   
-  #work .projects .container .summary p {
+  #work .portfolio .project figure figcaption {
     background: var(--primary-color);
   }
   
-  #work .projects .container:hover .summary p {
+  #work .portfolio .project:hover figure figcaption {
     opacity: 1;
+    overflow-y: scroll;
   }
   
   #contact address {
@@ -188,7 +192,7 @@
   
   /* Extra small devices (portrait phones, less than 576px) */
   @media (max-width: 575.98px) { 
-    #work .projects {
+    #work .portfolio {
       grid-template-columns: var(--pf-columns-small);
       grid-template-rows: var(--pf-rows-small);
       grid-template-areas: 
@@ -203,7 +207,7 @@
   
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) and (max-width: 767.98px) { 
-    #work .projects {
+    #work .portfolio {
       grid-template-columns: var(--pf-columns-small);
       grid-template-rows: var(--pf-rows-small);
       grid-template-areas: 
@@ -218,7 +222,7 @@
   
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) and (max-width: 991.98px) { 
-    #work .projects {
+    #work .portfolio {
       grid-template-columns: var(--pf-columns-small);
       grid-template-rows: var(--pf-rows-small);
       grid-template-areas: 

@@ -14,8 +14,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Technoveltyco // Web Developer</title>
 
-  <!-- Boostrap CSS -->
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <!-- Custom CSS - overrides Bootstrap -->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -57,7 +59,7 @@
   <!-- end hero banner -->
 
   <!-- portfolio -->
-  <div class="container-fluid">
+  <div class="container">
     <main class="page-wrapper">
 
       <!-- about -->
@@ -67,7 +69,7 @@
           <h2>About Me</h2>
         </div>
 
-        <div class="col-xl-10 col-lg-9 col-md-9 col-sm-12 col-xs-12 content brief">
+        <div class="col-xl-10 col-lg-9 col-md-9 col-sm-12 col-xs-12 content">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil enim facere nobis vel sed id culpa inventore unde delectus, amet autem vitae excepturi accusamus perspiciatis consequatur, molestiae corrupti magnam quidem ex rerum? Distinctio, corrupti eius! Cum maiores animi fugiat repudiandae adipisci, nesciunt deleniti ex aspernatur quis commodi repellat cumque delectus?</p>
   
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore saepe blanditiis quis accusamus, accusantium similique iste excepturi ratione delectus laboriosam veniam, illum ducimus autem facilis in repudiandae sequi repellendus doloribus soluta impedit consequuntur!</p>
@@ -85,84 +87,151 @@
           <h2>My Works</h2>
         </div>
 
-        <div class="col-xl-10 col-lg-9 col-md-9 col-sm-12 col-xs-12 content projects">
+        <!-- portfolio projects -->
+        <div class="col-xl-10 col-lg-9 col-md-9 col-sm-12 col-xs-12 content portfolio">
 
-          <!-- Highligh project -->
-          <article class="highlighted">
-            <!-- <img src="./assets/images/02-run-buddy.jpg" alt="most recent project preview"> -->
-            <div class="container">
-              <div class="summary">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat alias necessitatibus modi! Sapiente nisi optio expedita cum reprehenderit.</p>
-              </div>
-              <div class="info">
+          <!-- highlight project -->
+          <article class="container project highlighted">
+            <figure class="figure">
+              <img class="figure-img img-fluid" src="./assets/images/02-run-buddy.jpg" alt="Run Buddy homepage sample">
+              <figcaption class="figure-caption">
                 <h3>Run Buddy</h3>
-                <h4>MERN Stack</h4>
-              </div>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat alias necessitatibus modi! Sapiente nisi optio expedita cum reprehenderit.
+                </p>
+                <div class="list-group">
+                  <a class="list-group-item list-group-item-action active" 
+                      href="https://technoveltyco.github.io/prework-study-guide/" target="_blank">
+                    See Run Buddy sample <i class="bi bi-link-45deg"></i>
+                  </a>
+                  <a class="list-group-item list-group-item-action" 
+                      href="https://github.com/technoveltyco/prework-study-guide" target="_blank">
+                    Check out Run Buddy code <i class="bi bi-github"></i> <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </figcaption>
+            </figure>
+            <div class="info">
+              <h3>Run Buddy</h3>
+              <h4>MERN Stack</h4>
             </div>
           </article>
           <!-- end highlight project -->
   
           <!-- other projects -->
-          <article>
-            <!-- <img src="./assets/images/02-portfolio-1.jpg" alt="project 1 preview"> -->
-            <div class="container">
-              <div class="summary">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, praesentium!</p>
-              </div>
-              <div class="info">
+          <article class="container project">
+            <figure class="figure">
+              <img class="figure-img img-fluid" src="./assets/images/02-portfolio-1.jpg" alt="Led Wall project example">
+              <figcaption class="figure-caption">
                 <h3>LED Wall</h3>
-                <h4>Node.js</h4>
-                <h4>IoT</h4>
-              </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, praesentium!
+                </p>
+                <div class="list-group">
+                  <a class="list-group-item list-group-item-action active" 
+                      href="https://technoveltyco.github.io/bootcamp-week1-challenge/" target="_blank">
+                    See LED Wall sample <i class="bi bi-link-45deg"></i>
+                  </a>
+                  <a class="list-group-item list-group-item-action" 
+                      href="https://github.com/technoveltyco/bootcamp-week1-challenge" target="_blank">
+                    Check out LED Wall code <i class="bi bi-github"></i> <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </figcaption>
+            </figure>
+            <div class="info">
+              <h3>LED Wall</h3>
+              <h4>Node.js</h4>
+              <h4>IoT</h4>
             </div>
           </article>
     
-          <article>
-            <!-- <img src="./assets/images/02-portfolio-2.jpg" alt="project 2 preview"> -->
-            <div class="container">
-              <div class="summary">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, iure illo repudiandae unde adipisci et!</p>
-              </div>
-              <div class="info">
+          <article class="container project">
+            <figure class="figure">
+              <img class="figure-img img-fluid" src="./assets/images/02-portfolio-2.jpg" alt="Calculator project example">
+              <figcaption class="figure-caption">
                 <h3>Calculator</h3>
-                <h4>React.js</h4>
-                <h4>JavaScript</h4>
-                <h4>CSS</h4>
-              </div>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, iure illo repudiandae unde adipisci et!
+                </p>
+                <div class="list-group">
+                  <a class="list-group-item list-group-item-action active" 
+                      href="https://technoveltyco.github.io/bootcamp-week2-challenge/" target="_blank">
+                    See Calculator sample <i class="bi bi-link-45deg"></i>
+                  </a>
+                  <a class="list-group-item list-group-item-action" 
+                      href="https://github.com/technoveltyco/bootcamp-week2-challenge" target="_blank">
+                    Check out Calculator code <i class="bi bi-github"></i> <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </figcaption>
+            </figure>
+            <div class="info">
+              <h3>Calculator</h3>
+              <h4>React.js</h4>
+              <h4>JavaScript</h4>
+              <h4>CSS</h4>
             </div>
           </article>
     
-          <article>
-            <!-- <img src="./assets/images/02-portfolio-3.jpg" alt="project 3 preview"> -->
-            <div class="container">
-              <div class="summary">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa expedita dolore repudiandae, consequatur vitae molestiae nobis placeat similique sunt?</p>
-              </div>
-              <div class="info">
-                <h3>Pastel Puzzels</h3>
-                <h4>HTML</h4>
-                <h4>CSS</h4>
-                <h4>JavaScript</h4>
-              </div>
+          <article class="container project">
+            <figure class="figure">
+              <img class="figure-img img-fluid" src="./assets/images/02-portfolio-3.jpg" alt="Pastel Puzzles project example">
+              <figcaption class="figure-caption">
+                <h3>Pastel Puzzles</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa expedita dolore repudiandae, consequatur vitae molestiae nobis placeat similique sunt?
+                </p>
+                <div class="list-group">
+                  <a class="list-group-item list-group-item-action active" 
+                      href="https://technoveltyco.github.io/bootcamp-week3-challenge/" target="_blank">
+                    See Pastel Puzzels sample <i class="bi bi-link-45deg"></i>
+                  </a>
+                  <a class="list-group-item list-group-item-action" 
+                      href="https://github.com/technoveltyco/bootcamp-week3-challenge" target="_blank">
+                    Check out Pastel Puzzles code <i class="bi bi-github"></i> <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </figcaption>
+            </figure>
+            <div class="info">
+              <h3>Pastel Puzzles</h3>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
+              <h4>JavaScript</h4>
             </div>
           </article>
     
-          <article>
-            <!-- <img src="./assets/images/02-portfolio-4.jpg" alt="project 4 preview"> -->
-            <div class="container">
-              <div class="summary">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum velit deserunt natus labore.</p>
-              </div>
-              <div class="info">
+          <article class="container project">
+            <figure class="figure">
+              <img class="figure-img img-fluid" src="./assets/images/02-portfolio-4.jpg" alt="Pastel Puzzles project example">
+              <figcaption class="figure-caption">
                 <h3>Surf Report</h3>
-                <h4>HTML</h4>
-                <h4>CSS</h4>
-              </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum velit deserunt natus labore.
+                </p>
+                <div class="list-group">
+                  <a class="list-group-item list-group-item-action active" 
+                      href="https://technoveltyco.github.io/bootcamp-week4-challenge/" target="_blank">
+                    See Surf Report sample <i class="bi bi-link-45deg"></i>
+                  </a>
+                  <a class="list-group-item list-group-item-action" 
+                      href="https://github.com/technoveltyco/bootcamp-week4-challenge" target="_blank">
+                    Check out Surf Report code <i class="bi bi-github"></i> <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
+              </figcaption>
+            </figure>
+            <div class="info">
+              <h3>Surf Report</h3>
+              <h4>HTML</h4>
+              <h4>CSS</h4>
             </div>
           </article>
           <!-- end other projects -->
 
         </div>
+        <!-- end portfolio projects -->
 
       </section>
       <!-- end work -->
