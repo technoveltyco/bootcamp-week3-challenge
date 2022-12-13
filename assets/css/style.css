@@ -41,7 +41,7 @@
     margin: 0;
   }
   
-  .highlight {
+  .text-highlight {
     background-color: var(--secondary-color);
     color: var(--light-text);
     padding: 10px;
@@ -65,16 +65,12 @@
   
   .hero-banner {
     background: center/100% no-repeat url("../images/02-hero-bg.jpg");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
   }
   
   /* Main content - about, work, contact. */
   
   .page-wrapper {
-    margin: 2.33em;
+    padding: 2.33em;
   }
   
   .page-section {
