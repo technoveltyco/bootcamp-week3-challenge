@@ -200,9 +200,15 @@
     font-weight: bold;
   }
   
+  #contact .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   #contact address {
     display: block;
-    margin: 0 1.33em;;
+    margin: 0 1.33em;
   }
   
   /* footer */
@@ -232,8 +238,12 @@
     .hero-banner .avatar img {
       display: none;
     }
+
+    #contact .content .geolocation {
+      display: none;
+    }
   }
-  
+
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) and (max-width: 767.98px) { 
     #work .portfolio {
@@ -251,6 +261,10 @@
     .hero-banner .avatar,
     .hero-banner .avatar img {
       display: none;
+    }
+
+    #contact .content {
+      flex-direction: column;
     }
   }
   
@@ -271,6 +285,10 @@
     .hero-banner .avatar,
     .hero-banner .avatar img {
       width: 60%;
+    }
+
+    #contact .content {
+      flex-direction: column;
     }
   }
   
