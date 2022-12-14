@@ -72,7 +72,7 @@
     background: transparent;
   }
   
-  /* main - about, work, contact. */
+  /* main - about, work, skills, contact. */
   
   .page-wrapper {
     padding: 2.33em;
@@ -145,13 +145,29 @@
     height: 100%;
   }
 
+  #work .portfolio .project figure figcaption {
+    opacity: 0;
+    color: var(--light-text);
+    font-size: var(--font-size-small);
+    padding: 1em;
+  }
+  
+  #work .portfolio .project figure figcaption {
+    background: var(--primary-color);
+  }
+  
+  #work .portfolio .project:hover figure figcaption {
+    opacity: 1;
+    overflow-y: scroll;
+  }
+
   #work .portfolio .project .info {
     bottom: 15%;
     background-color: var(--secondary-color);
     padding: 10px;
   }
 
-  #work .portfolio .project.project.highlighted .info {
+  #work .portfolio .project.highlighted .info {
     bottom: 20%;
   }
   
@@ -167,22 +183,6 @@
   #work .portfolio .project .info h4 {
     font-size: var(--font-size-medium);
     display: inline-block;
-  }
-    
-  #work .portfolio .project figure figcaption {
-    opacity: 0;
-    color: var(--light-text);
-    font-size: var(--font-size-small);
-    padding: 1em;
-  }
-  
-  #work .portfolio .project figure figcaption {
-    background: var(--primary-color);
-  }
-  
-  #work .portfolio .project:hover figure figcaption {
-    opacity: 1;
-    overflow-y: scroll;
   }
 
   #skills .skills .card.skill {
