@@ -59,6 +59,17 @@
   
   .hero-banner {
     background: center/100% no-repeat url("../images/02-hero-bg.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 2em;
+  }
+
+  .hero-banner .avatar,
+  .hero-banner .avatar img {
+    width: 55%;
+    text-align: center;
+    background: transparent;
   }
   
   /* main - about, work, contact. */
@@ -216,6 +227,11 @@
       '.'
       ;
     }
+
+    .hero-banner .avatar,
+    .hero-banner .avatar img {
+      display: none;
+    }
   }
   
   /* Small devices (landscape phones, 576px and up) */
@@ -230,6 +246,11 @@
       '.'
       '.'
       ;
+    }
+
+    .hero-banner .avatar,
+    .hero-banner .avatar img {
+      display: none;
     }
   }
   
@@ -246,14 +267,25 @@
       '.'
       ;
     }
+
+    .hero-banner .avatar,
+    .hero-banner .avatar img {
+      width: 60%;
+    }
   }
   
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) and (max-width: 1199.98px) { 
-
+    .hero-banner .avatar,
+    .hero-banner .avatar img {
+      width: 50%;
+    }
   }
   
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) { 
-
+    .hero-banner .avatar,
+    .hero-banner .avatar img {
+      width: 50%;
+    }
   }
