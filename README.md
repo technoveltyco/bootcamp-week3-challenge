@@ -96,7 +96,7 @@ The boilerplate code was the final output from the [week 2 challenge repo](https
 
 ### What I learned
 
-The biggest challenge was refactoring the project cards, without using the [Bootstrap card component](). I decided to be more ambitious and create my own responsive solution for this section, using semantic `figure` and `figcaption` to make the project pictures more accessible, while including a `hover` effect to include and scrollable contextual info of the project, and providing links to the repos and live sites of each project.
+The biggest challenge was refactoring the project cards, without using the [Bootstrap card component](https://getbootstrap.com/docs/4.0/components/card/). I decided to be more ambitious and create my own responsive solution for this section, using semantic `figure` and `figcaption` to make the project pictures more accessible, while including a `hover` effect to include and scrollable contextual info of the project, and providing links to the repos and live sites of each project.
 
 ![Project card no hover](./assets/images/Screenshot%202022-12-14%20at%2017-31-41%20Technoveltyco%20__%20Web%20Developer.png)
 ![Project card with hover](./assets/images/Screenshot%202022-12-14%20172825.png)
