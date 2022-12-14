@@ -105,33 +105,44 @@ The biggest challenge was refactoring the project cards, without using the [Boot
 The main code used for this snippets can be seen below:
 
 ```html
-<!-- highlight project -->
+<!-- project card highlighted -->
 <article class="container project highlighted">
+
   <figure class="figure">
+
     <img class="figure-img img-fluid" src="./assets/images/02-run-buddy.jpg" alt="Run Buddy homepage sample">
+
+    <!-- project hover info -->
     <figcaption class="figure-caption">
       <h3>Run Buddy</h3>
+
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat alias necessitatibus modi! Sapiente nisi optio expedita cum reprehenderit.
       </p>
+
       <div class="list-group">
         <a class="list-group-item list-group-item-action active" 
             href="https://technoveltyco.github.io/prework-study-guide/" target="_blank">
           See Run Buddy sample <i class="bi bi-link-45deg"></i>
         </a>
+
         <a class="list-group-item list-group-item-action" 
             href="https://github.com/technoveltyco/prework-study-guide" target="_blank">
           Check out Run Buddy code <i class="bi bi-github"></i> <i class="bi bi-link-45deg"></i>
         </a>
       </div>
     </figcaption>
+    <!-- end hover project info-->
+
   </figure>
+
   <div class="info">
     <h3>Run Buddy</h3>
     <h4>MERN Stack</h4>
   </div>
+
 </article>
-<!-- end highlight project -->
+<!-- end project card highlighted -->
 ```
 
 ```css
@@ -180,13 +191,29 @@ The main code used for this snippets can be seen below:
   height: 100%;
 }
 
+#work .portfolio .project figure figcaption {
+  opacity: 0;
+  color: var(--light-text);
+  font-size: var(--font-size-small);
+  padding: 1em;
+}
+
+#work .portfolio .project figure figcaption {
+  background: var(--primary-color);
+}
+
+#work .portfolio .project:hover figure figcaption {
+  opacity: 1;
+  overflow-y: scroll;
+}
+
 #work .portfolio .project .info {
   bottom: 15%;
   background-color: var(--secondary-color);
   padding: 10px;
 }
 
-#work .portfolio .project.project.highlighted .info {
+#work .portfolio .project.highlighted .info {
   bottom: 20%;
 }
 
@@ -202,22 +229,6 @@ The main code used for this snippets can be seen below:
 #work .portfolio .project .info h4 {
   font-size: var(--font-size-medium);
   display: inline-block;
-}
-  
-#work .portfolio .project figure figcaption {
-  opacity: 0;
-  color: var(--light-text);
-  font-size: var(--font-size-small);
-  padding: 1em;
-}
-
-#work .portfolio .project figure figcaption {
-  background: var(--primary-color);
-}
-
-#work .portfolio .project:hover figure figcaption {
-  opacity: 1;
-  overflow-y: scroll;
 }
 ```
 
