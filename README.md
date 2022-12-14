@@ -2,7 +2,7 @@
 
 ## Table of contents
 
-- [Bootstrap Portfolio Challenge: Refactor portfolio with UX and Advanced CSS](#bootstrap-portfolio-challenge-refactor-portfolio-week-2-challenge-with-ux-and-advanced-css)
+- [Bootstrap Portfolio Challenge: Refactor portfolio with UX and Advanced CSS](#bootstrap-portfolio-challenge-refactor-portfolio-with-ux-and-advanced-css)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
@@ -18,7 +18,7 @@
 
 ## Overview
 
-THis is the Bootcamp week 3 challenge project where the portfolio layout from the [week 2 challenge](https://technoveltyco.github.io/bootcamp-week2-challenge/) will be refactored using the [Bootstrap CSS Framework (version 4)](https://getbootstrap.com/docs/4.0/getting-started/introduction/).
+This is the Bootcamp week 3 challenge project where the portfolio layout from the [week 2 challenge](https://technoveltyco.github.io/bootcamp-week2-challenge/) will be refactored using the [Bootstrap CSS Framework (version 4)](https://getbootstrap.com/docs/4.0/getting-started/introduction/).
 
 ### The challenge
 
@@ -96,7 +96,7 @@ The boilerplate code was the final output from the [week 2 challenge repo](https
 
 ### What I learned
 
-The biggest challenge was refactoring the project cards, without using the [Bootstrap card component](https://getbootstrap.com/docs/4.0/components/card/). I decided to be more ambitious and create my own responsive solution for this section, using semantic `figure` and `figcaption` to make the project pictures more accessible, while including a `hover` effect to include and scrollable contextual info of the project, and providing links to the repos and live sites of each project.
+The biggest challenge was refactoring the project cards, without using the [Bootstrap card component](https://getbootstrap.com/docs/4.0/components/card/). I decided to be more ambitious and create my own responsive solution for this section, using semantic `figure` and `figcaption` to make the project pictures more accessible, and including a `hover` effect to include and scrollable contextual info of the project, while providing links to the repos and live sites of each project.
 
 ![Project card no hover](./assets/images/Screenshot%202022-12-14%20at%2017-31-41%20Technoveltyco%20__%20Web%20Developer.png)
 ![Project card with hover](./assets/images/Screenshot%202022-12-14%20172825.png)
@@ -105,7 +105,7 @@ The biggest challenge was refactoring the project cards, without using the [Boot
 The main code used for this snippets can be seen below:
 
 ```html
-<!-- project card highlighted -->
+<!-- project card (highlighted) -->
 <article class="container project highlighted">
 
   <figure class="figure">
@@ -132,7 +132,7 @@ The main code used for this snippets can be seen below:
         </a>
       </div>
     </figcaption>
-    <!-- end hover project info-->
+    <!-- end project hover info-->
 
   </figure>
 
@@ -142,7 +142,7 @@ The main code used for this snippets can be seen below:
   </div>
 
 </article>
-<!-- end project card highlighted -->
+<!-- end project card (highlighted) -->
 ```
 
 ```css
@@ -186,19 +186,13 @@ The main code used for this snippets can be seen below:
 }
 
 #work .portfolio .project figure figcaption {
+  opacity: 0;
   top: 0;
   z-index: 10;
   height: 100%;
-}
-
-#work .portfolio .project figure figcaption {
-  opacity: 0;
-  color: var(--light-text);
   font-size: var(--font-size-small);
   padding: 1em;
-}
-
-#work .portfolio .project figure figcaption {
+  color: var(--light-text);
   background: var(--primary-color);
 }
 
