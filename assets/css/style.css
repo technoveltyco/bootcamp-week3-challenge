@@ -157,9 +157,7 @@
     font-size: var(--font-size-medium);
     display: inline-block;
   }
-  
-  /* hover effects. */
-  
+    
   #work .portfolio .project figure figcaption {
     opacity: 0;
     color: var(--light-text);
@@ -174,6 +172,21 @@
   #work .portfolio .project:hover figure figcaption {
     opacity: 1;
     overflow-y: scroll;
+  }
+
+  #skills .skills .card.skill {
+    width: 23rem;
+    margin: 1em;
+  }
+
+  #skills .skills .card.skill .card-img-top {
+    width: 20%;
+    margin: 10px auto;
+  }
+
+  #skills .skills .card.skill .card-title {
+    color: var(--dark-text);
+    font-weight: bold;
   }
   
   #contact address {
