@@ -1,8 +1,8 @@
-# Bootstrap Portfolio Challenge: Refactor portfolio week 2 challenge with UX and Advanced CSS
+# Bootstrap Portfolio Challenge: Refactor portfolio with UX and Advanced CSS
 
 ## Table of contents
 
-- [Bootstrap Portfolio Challenge: Refactor portfolio week 2 challenge with UX and Advanced CSS](#bootstrap-portfolio-challenge-refactor-portfolio-week-2-challenge-with-ux-and-advanced-css)
+- [Bootstrap Portfolio Challenge: Refactor portfolio with UX and Advanced CSS](#bootstrap-portfolio-challenge-refactor-portfolio-week-2-challenge-with-ux-and-advanced-css)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
