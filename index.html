@@ -19,13 +19,13 @@
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <!-- Custom CSS - overrides Bootstrap -->
-  <link rel="stylesheet" href="./assets/css/style.css?v=0.1">
+  <link rel="stylesheet" href="./assets/css/style.css?v=0.1.1">
 </head>
 
 <body>
   
   <!-- header - navbar -->
-  <header class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark py-0 sticky-top">
 
     <!--navbar brand -->
     <a href="/" class="navbar-brand text-highlight">
@@ -54,8 +54,13 @@
   <!-- end header - navbar -->
 
   <!-- hero banner -->
-  <section class="jumbotron d-flex justify-content-center hero-banner">
-    <h2 class="text-highlight">Experienced in Back-End upskilling to become a Full Stack Developer</h2>
+  <section class="jumbotron jumbotron-fluid hero-banner">
+    <h2 class="text-highlight">Experienced in Back-End upskilling <br> to become a Full Stack Developer</h2>
+    <picture class="avatar">
+      <source media="screen" srcset="https://toppng.com/uploads/preview/bart-simpson-skateboard-11548628564kstxyrtgfj.png" type="image/png">
+      <img class="img-fluid img-thumbnail rounded-circle" 
+           src="https://toppng.com/uploads/preview/bart-simpson-skateboard-11548628564kstxyrtgfj.png" alt="my avatar">
+    </picture>
   </section>
   <!-- end hero banner -->
 
@@ -377,8 +382,10 @@
   <!-- end portfolio -->
 
   <!-- footer -->
-  <footer>
+  <footer class="navbar navbar-light bg-light">
+    <a href="https://github.com/technoveltyco">Technovelty GitHub</a>
     <p>Made with ❤️ with HTML and CSS.</p>
+    <a href="#">Technovelty Website</a>
   </footer>
   <!-- end footer -->
 
